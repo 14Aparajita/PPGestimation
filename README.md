@@ -74,6 +74,15 @@ A **subject-independent train–test split** is used to avoid data leakage and e
 
 ---
 
+.
+├── outputs/
+│   └── true_vs_pred_sbp.png     # Ground truth vs predicted SBP visualization
+├── project.ipynb               # Main Jupyter notebook (preprocessing, features, models)
+├── fds_report.pdf              # Detailed project/report documentation
+└── README.md                   # Project overview and documentation
+
+---
+
 ## 5. Results
 | BP Type | MAE (mmHg) | RMSE (mmHg) | R² |
 |-------|------------|-------------|----|
