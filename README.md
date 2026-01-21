@@ -1,4 +1,3 @@
-```markdown
 # Photoplethysmography-Based Blood Pressure Prediction Using Machine Learning
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
@@ -113,45 +112,3 @@ If you use this work, please cite it as an IEEE conference paper.
 
 ## 9. License
 This repository is intended **strictly for academic and research use**.
-```
-
----
-
-## 2. `requirements.txt` 
-
-Create a file named **`requirements.txt`**:
-
-```txt
-python>=3.8
-numpy
-scipy
-pandas
-scikit-learn
-matplotlib
-pywavelets
-h5py
-joblib
-tqdm
-seaborn
-statsmodels
-```
-
----
-
-
----
-
-## 4. `.gitignore`
-
-```gitignore
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.venv
-data/raw/*
-data/processed/*
-results/logs/*
-.ipynb_checkpoints/
-```
