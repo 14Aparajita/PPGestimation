@@ -12,13 +12,18 @@ Continuous blood pressure (BP) monitoring is essential for early diagnosis and m
 
 ---
 
-## Author
+## Authors
 **Aparajita Vaish**  
 Department of Electronics and Communication Engineering  
 IIIT Naya Raipur, India  
 
- 
+**Komendra Sahu**  
+Department of Data Science and Artificial Intelligence  
+IIIT Naya Raipur, India  
 
+**Aayush Sahu**  
+Department of Data Science and Artificial Intelligence  
+IIIT Naya Raipur, India  
 
 ---
 
@@ -44,75 +49,12 @@ A **subject-independent train–test split** is used to avoid data leakage and e
 
 ---
 
-## 3. Methodology
-### 3.1 Signal Preprocessing
-- Butterworth bandpass filtering (0.5–8 Hz)
-- Wavelet denoising (Daubechies db6)
-- Savitzky–Golay smoothing
-- Z-score normalization
+## Repository Structure
 
-### 3.2 Feature Engineering
-- **Time-domain features:** mean, variance, extrema, pulse amplitude, AUC  
-- **Derivative-based features:** APG waves (a, b, c, d, e) and ratios  
-- **Frequency-domain features:** FFT-based dominant frequency and band energy  
-
-### 3.3 Machine Learning Models
-- K-Nearest Neighbors Regression  
-- Support Vector Regression  
-- Random Forest Regression  
-
-### 3.4 Ensemble Learning
-- Voting Regressor  
-- Stacking Regressor  
-
----
-
-## 4. Evaluation Metrics
-- Mean Absolute Error (MAE)  
-- Root Mean Square Error (RMSE)  
-- Coefficient of Determination (R²)  
-
----
-
+```text
 .
 ├── outputs/
 │   └── true_vs_pred_sbp.png     # Ground truth vs predicted SBP visualization
 ├── project.ipynb               # Main Jupyter notebook (preprocessing, features, models)
 ├── fds_report.pdf              # Detailed project/report documentation
 └── README.md                   # Project overview and documentation
-
----
-
-## 5. Results
-| BP Type | MAE (mmHg) | RMSE (mmHg) | R² |
-|-------|------------|-------------|----|
-| SBP | 5.63 | 8.67 | 0.7856 |
-| DBP | 2.70 | 4.09 | 0.7463 |
-| ABP | 3.42 | 5.21 | 0.7755 |
-
-The stacking ensemble model achieves the best overall performance, validating the effectiveness of feature-based ensemble learning for cuffless BP estimation.
-
----
-
-## 6. Limitations
-- Sensitivity to motion artifacts  
-- Absence of subject-specific calibration  
-- Dependence on fixed windowing  
-
----
-
-## 7. Future Work
-- Beat-level segmentation and adaptive windowing  
-- Hybrid deep learning + feature-based models  
-- Personalized calibration using transfer learning  
-- Deployment on wearable hardware platforms  
-
----
-
-## 8. Citation
-If you use this work, please cite it as an IEEE conference paper.
-
----
-
-## 9. License
-This repository is intended **strictly for academic and research use**.
