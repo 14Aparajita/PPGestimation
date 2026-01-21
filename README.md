@@ -17,14 +17,6 @@ Continuous blood pressure (BP) monitoring is essential for early diagnosis and m
 Department of Electronics and Communication Engineering  
 IIIT Naya Raipur, India  
 
-**Komendra Sahu**  
-Department of Data Science and Artificial Intelligence  
-IIIT Naya Raipur, India  
-
-**Aayush Sahu**  
-Department of Data Science and Artificial Intelligence  
-IIIT Naya Raipur, India  
-
 ---
 
 ## Keywords
