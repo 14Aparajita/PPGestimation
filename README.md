@@ -12,7 +12,7 @@ Continuous blood pressure (BP) monitoring is essential for early diagnosis and m
 
 ---
 
-## Authors
+## Author
 **Aparajita Vaish**  
 Department of Electronics and Communication Engineering  
 IIIT Naya Raipur, India  
