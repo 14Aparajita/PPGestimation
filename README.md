@@ -8,7 +8,7 @@
 ---
 
 ## Abstract
-Continuous blood pressure (BP) monitoring is essential for early diagnosis and management of cardiovascular diseases; however, conventional cuff-based techniques are unsuitable for long-term and wearable use. This repository implements an **IEEE-style research pipeline** for **cuffless blood pressure estimation** using **photoplethysmography (PPG)** signals. The framework integrates multi-stage signal preprocessing, extensive handcrafted feature engineering, and classical regression models enhanced through ensemble learning to estimate **SBP**, **DBP**, and **ABP**.
+Continuous blood pressure (BP) monitoring is essential for early diagnosis and management of cardiovascular diseases; however, conventional cuff-based techniques are unsuitable for long-term and wearable use. This repository presents an **IEEE-style research pipeline** for **cuffless blood pressure estimation** using **photoplethysmography (PPG)** signals. The framework integrates multi-stage signal preprocessing, extensive handcrafted feature engineering, and classical regression models enhanced through ensemble learning to estimate **systolic blood pressure (SBP)**, **diastolic blood pressure (DBP)**, and **average blood pressure (ABP)**.
 
 ---
 
@@ -33,19 +33,19 @@ Photoplethysmography, Blood Pressure Estimation, Feature Engineering, Machine Le
 ---
 
 ## 1. Introduction
-Photoplethysmography (PPG) is a non-invasive optical technique widely used in wearable devices to capture blood volume variations. Although PPG does not directly measure blood pressure, its waveform morphology encodes cardiovascular information related to arterial stiffness and hemodynamics. This project presents a **feature-engineered machine learning framework** designed for interpretability, scalability, and suitability for real-time wearable applications.
+Photoplethysmography (PPG) is a non-invasive optical technique widely adopted in wearable healthcare devices to measure blood volume changes in peripheral tissues. Although PPG does not directly measure blood pressure, its waveform morphology encodes valuable cardiovascular information related to arterial stiffness and hemodynamics. This work proposes a **feature-driven machine learning framework** emphasizing interpretability, scalability, and suitability for real-time cuffless blood pressure monitoring.
 
 ---
 
 ## 2. Dataset Description
-- **Signal Type:** PPG  
+- **Signal Type:** Photoplethysmography (PPG)  
 - **Sampling Frequency:** 125 Hz  
 - **Window Length:** 875 samples  
-- **Storage Format:** HDF5  
-- **Scale:** ~9 million signal windows  
-- **Labels:** SBP, DBP, ABP  
+- **Data Format:** HDF5  
+- **Dataset Size:** Approximately 9 million signal windows  
+- **Target Variables:** SBP, DBP, ABP  
 
-A **subject-independent train–test split** is used to avoid data leakage and ensure generalization.
+A **subject-independent train–test split** is employed to prevent data leakage and ensure robust generalization across unseen subjects.
 
 ---
 
@@ -56,5 +56,5 @@ A **subject-independent train–test split** is used to avoid data leakage and e
 ├── outputs/
 │   └── true_vs_pred_sbp.png     # Ground truth vs predicted SBP visualization
 ├── project.ipynb               # Main Jupyter notebook (preprocessing, features, models)
-├── fds_report.pdf              # Detailed project/report documentation
-└── README.md                   # Project overview and documentation
+├── fds_report.pdf              # Detailed project report and documentation
+└── README.md                   # Project overview and instructions
